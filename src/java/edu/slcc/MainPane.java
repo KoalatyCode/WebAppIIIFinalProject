@@ -15,7 +15,7 @@ public class MainPane implements Serializable
     private static final int NEWS_INDEX = 0;
     private static final int STUDENT_INDEX = 1;
     private static final int ADMIN_INDEX = 2;
-    private static final int PROMOTIONS_INDEX = 3;
+    private static final int SHOP_INDEX = 3;
     private static final int CONTACT_INDEX = 4;
     private static final int DATABASE_INDEX = 5;
     private static final int PAYMENT_INDEX = 6;
@@ -68,9 +68,9 @@ public class MainPane implements Serializable
         secondIndex = 0;
     }
 
-    public void promotionsAction(ActionEvent e)
+    public void shopAction(ActionEvent e)
     {
-        index = PROMOTIONS_INDEX;
+        index = SHOP_INDEX;
         secondIndex = 0;
     }
     
@@ -128,9 +128,9 @@ public class MainPane implements Serializable
         return getCSS(CONTACT_INDEX);
     }
 
-    public String getPromotionsStyle()
+    public String getShopStyle()
     {
-        return getCSS(PROMOTIONS_INDEX);
+        return getCSS(SHOP_INDEX);
     }
 
     // methods for determining the current tab
@@ -154,9 +154,9 @@ public class MainPane implements Serializable
         return index == NEWS_INDEX;
     }
 
-    public boolean isPromotionCurrent()
+    public boolean isShopCurrent()
     {
-        return index == PROMOTIONS_INDEX;
+        return index == SHOP_INDEX;
     }
     public boolean isDatabaseCurrent()
     {
